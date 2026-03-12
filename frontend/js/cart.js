@@ -38,11 +38,11 @@ function renderCart() {
 
     totalEl.textContent = `Total: $${total.toLocaleString(undefined, {minimumFractionDigits: 2})}`;
 }
-
+// Function to remove item from cart
 function removeFromCart(index) {
     let cart = JSON.parse(localStorage.getItem('luxury_cart')) || [];
     cart.splice(index, 1);
     localStorage.setItem('luxury_cart', JSON.stringify(cart));
     renderCart();
-    updateCartCount(); // main.js හි ඇති function එක
+    updateCartCount(); 
 }

@@ -1,9 +1,7 @@
-// Page එක load වද්දී update කරන්න
 document.addEventListener('DOMContentLoaded', () => {
     updateCartCount();
 });
 
-// Navigation bar එකේ Cart (0) එක update කරන function එක
 function updateCartCount() {
     const cart = JSON.parse(localStorage.getItem('luxury_cart')) || [];
     const countElement = document.getElementById('cart-count');
@@ -12,7 +10,6 @@ function updateCartCount() {
     }
 }
 
-// "Add to Cart" බටන් එක එබූ විට වැඩ කරන function එක
 function addToCart(id, name, price, image) {
     let cart = JSON.parse(localStorage.getItem('luxury_cart')) || [];
     
