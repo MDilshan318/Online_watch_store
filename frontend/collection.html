@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Collection | Luxury Time</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html" class="logo">LUXURY TIME</a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="collection.html">Collection</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="cart.html">Cart (<span id="cart-count">0</span>)</a></li>
+                <li><a href="login.html" id="auth-link">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h2 style="text-align: center; font-family: var(--font-serif); font-size: 2.5rem; color: var(--primary-color); margin-bottom: 3rem;">Our Collection</h2>
+        <div class="product-grid" id="product-grid">
+            <div class="product-card">
+                <img src="https://images.unsplash.com/photo-1523170335258-f5ed11844a49?w=400&q=80" alt="Watch 1" class="product-img">
+                <h3 class="product-title">Royal Oak Automatic</h3>
+                <p class="product-price">$24,500.00</p>
+                <button class="btn btn-outline" onclick="addToCart(1, 'Royal Oak Automatic', 24500, 'https://images.unsplash.com/photo-1523170335258-f5ed11844a49?w=400&q=80')">Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <img src="https://images.pexels.com/photos/190819/pexels-photo-190819.jpeg?_gl=1*i0rfgk*_ga*MTU0OTA3NDIxNC4xNzY1Mjk5Nzcw*_ga_8JE65Q40S6*czE3NzMzMDAwMTkkbzIkZzAkdDE3NzMzMDAwMTkkajYwJGwwJGgw" alt="Watch 2" class="product-img">
+                <h3 class="product-title">Nautilus Blue Dial</h3>
+                <p class="product-price">$35,000.00</p>
+                <button class="btn btn-outline" onclick="addToCart(2, 'Nautilus Blue Dial', 35000, 'https://images.unsplash.com/photo-1548036328-c9fa89d128fa?w=400&q=80')">Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <img src="https://images.pexels.com/photos/364822/rolex-watch-time-luxury-364822.jpeg?_gl=1*b4effm*_ga*MTU0OTA3NDIxNC4xNzY1Mjk5Nzcw*_ga_8JE65Q40S6*czE3NzMzMDAwMTkkbzIkZzEkdDE3NzMzMDAxNDckajU1JGwwJGgw" alt="Watch 3" class="product-img">
+                <h3 class="product-title">Submariner Date</h3>
+                <p class="product-price">$14,200.00</p>
+                <button class="btn btn-outline" onclick="addToCart(3, 'Submariner Date', 14200, 'https://images.unsplash.com/photo-1587836374828-cb4387df3fc7?w=400&q=80')">Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <img src="https://images.unsplash.com/photo-1594534475808-b18fc33b045e?w=400&q=80" alt="Watch 4" class="product-img">
+                <h3 class="product-title">Speedmaster Moonwatch</h3>
+                <p class="product-price">$6,600.00</p>
+                <button class="btn btn-outline" onclick="addToCart(4, 'Speedmaster Moonwatch', 6600, 'https://images.unsplash.com/photo-1594534475808-b18fc33b045e?w=400&q=80')">Add to Cart</button>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Luxury Time. All Rights Reserved.</p>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

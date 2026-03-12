@@ -1,0 +1,7 @@
+com\luxurytime\LuxuryTimeApplication.class
+com\luxurytime\entity\User.class
+com\luxurytime\config\CorsConfig.class
+com\luxurytime\controller\AuthController.class
+com\luxurytime\repository\ProductRepository.class
+com\luxurytime\repository\UserRepository.class
+com\luxurytime\entity\Product.class
